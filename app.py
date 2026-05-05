@@ -1,10 +1,6 @@
 import streamlit as st
 from pipeline import run_pipline
 import time 
-
-st.write("Secrets keys:", list(st.secrets.keys()))
-st.stop()
-
 st.title("LET (lead enrichment tool)")
 if st.button("Process leads"):
     with st.spinner(text="Processing..."):
