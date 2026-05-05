@@ -1,0 +1,23 @@
+# credentials & secrets
+credentials.json
+.env
+# Google Cloud service-account keys
+eliseai-*.json
+*-service-account*.json
+gcp-*.json
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# system
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
