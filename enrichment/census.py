@@ -25,5 +25,4 @@ def enrich_census(lead):
         return None
     renter_percentage = renter_occupied / total_occupied * 100
     lead["Housing Units"] = int(row.get(CENSUS_TOTAL_HOUSING_UNITS))
-    lead["Median Income"] = int(row.get(CENSUS_MEDIAN_HOUSEHOLD_INCOME))
-    lead["Renter %"] = renter_percentage
+    lead["Renter Percentage"] = renter_percentage
