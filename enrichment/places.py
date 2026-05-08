@@ -33,7 +33,7 @@ def enrich_property(lead):
     }
 
     try:
-        response = requests.post(PLACES_URL, json=body, headers=headers, timeout=15)
+        response = requests.post(PLACES_URL, json=body, headers=headers, timeout=30)
         response.raise_for_status()
         data = response.json()
 
@@ -50,7 +50,7 @@ def enrich_property(lead):
         lead["Property Review Count"] = place.get("userRatingCount")
         lead["Property Business Status"] = place.get("businessStatus")
     except Exception as e:
-        st.write(f"Could not fetch property data: {e}")
+        print(f"Could not fetch property data: {e}")
         lead["Property Rating"] = None
         lead["Property Review Count"] = None
         lead["Property Name"] = None
