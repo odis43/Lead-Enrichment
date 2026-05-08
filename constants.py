@@ -12,13 +12,6 @@ STATE_FIPS = {
     "DC": "11"
 }
 
-WEIGHTS = {
-    "renter_pct":       0.30,   # is this a renter market?
-    "vacancy_rate":     0.25,   # is it actively turning over?
-    "housing_units":    0.20,   # is the market big enough?
-    "review_count":     0.15,   # how large is the specific property?
-}
-
 CENSUS_BASE_URL = "https://api.census.gov/data/2022/acs/acs5"
 
 CENSUS_VARIABLES = "B25003_001E,B25003_002E,B25001_001E,B19013_001E"
