@@ -20,8 +20,8 @@ if clicked:
     if len(leads) == 0:
         st.success("No new leads to enrich")
     else:
-        st.write(leads)
-        st.success(f"Processed: {len(leads)} new leads")
+        st.success(f"Processed: {len(leads)} new lead{'s' if len(leads) != 1 else ''}")
+   
     st.page_link(page="https://docs.google.com/spreadsheets/d/17lwYqaJZ2Sxx7KRVMHOKmw3jQUE0H7pSLOJJEMzefWE/edit?gid=0#gid=0", label="Go to data")
 
 
